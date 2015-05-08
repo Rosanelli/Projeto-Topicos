@@ -1,0 +1,5 @@
+C:\Users\Alan\Documents\GitHub\Projeto-Topicos\projetoTopicos\projetoTopicos\bin\projetoTopicos.dll
+C:\Users\Alan\Documents\GitHub\Projeto-Topicos\projetoTopicos\projetoTopicos\bin\projetoTopicos.pdb
+C:\Users\Alan\Documents\GitHub\Projeto-Topicos\projetoTopicos\projetoTopicos\obj\Debug\projetoTopicos.csprojResolveAssemblyReference.cache
+C:\Users\Alan\Documents\GitHub\Projeto-Topicos\projetoTopicos\projetoTopicos\obj\Debug\projetoTopicos.dll
+C:\Users\Alan\Documents\GitHub\Projeto-Topicos\projetoTopicos\projetoTopicos\obj\Debug\projetoTopicos.pdb

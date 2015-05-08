@@ -12,7 +12,7 @@ namespace projetoTopicos.Classes
 
         public Conexao()
         {
-            var connectionString = "Server= localhost\\SQLEXPRESS;Database=projetoTopicos;user = sa; password = 025640;";
+            var connectionString = "Server= localhost\\SQLEXPRESS;Database=progweb;user = sa; password = 025640;";
 
             Connection = new SqlConnection(connectionString);
         }

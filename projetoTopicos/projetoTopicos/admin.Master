@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="admin.master.cs" Inherits="projetoTopicos.admin"  %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap_files/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="bootstrap_files/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="bootstrap_files/css/theme.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="/paginas/Principal.aspx">Menu</a></li>
+                            <li class="dropdown">
+                                <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Cadastro<span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="/paginas/Cad_Usuario.aspx">Usuario</a></li>
+                                    <li><a href="/paginas/Cad_Cliente.aspx">Cliente</a></li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                        <div class="autenticacao">
+                            <asp:LinkButton ID="btnSair" CssClass="btnAutenticacao" Text="Sair" OnClick="btnSair_Click" runat="server" />
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+<!-- Bootstrap core JavaScript -->
+<script src="../bootstrap_files/jquery.min.js"></script>
+<script src="../bootstrap_files/bootstrap.min.js"></script>
+<script src="../bootstrap_files/docs.min.js"></script>
+<script src="../bootstrap_files/ie10-viewport-bug-workaround.js"></script>
+<!-- ---------------------------->
+</html>

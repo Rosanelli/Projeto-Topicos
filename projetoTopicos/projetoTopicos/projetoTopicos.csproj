@@ -57,13 +57,79 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bootstrap_files\bootstrap.min.js" />
+    <Content Include="bootstrap_files\css\bootstrap-theme.min.css" />
+    <Content Include="bootstrap_files\css\bootstrap.min.css" />
+    <Content Include="bootstrap_files\css\theme.css" />
+    <Content Include="bootstrap_files\docs.min.js" />
+    <Content Include="bootstrap_files\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="bootstrap_files\ie-emulation-modes-warning.js" />
+    <Content Include="bootstrap_files\ie10-viewport-bug-workaround.js" />
+    <Content Include="bootstrap_files\jquery-1.11.2.min.js" />
+    <Content Include="bootstrap_files\jquery.min.js" />
+    <Content Include="imagens\posto.jpg" />
+    <Content Include="paginas\Cad_Cliente.aspx" />
+    <Content Include="paginas\Principal.aspx" />
+    <Content Include="paginas\Cad_Usuario.aspx" />
+    <Content Include="paginas\Login.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Conexao.cs" />
+    <Compile Include="admin.Master.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin.Master.designer.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="classes\AD\ClienteAD.cs" />
+    <Compile Include="classes\AD\UsuarioAD.cs" />
+    <Compile Include="classes\Conexao.cs" />
+    <Compile Include="classes\EN\BonificacaoEN.cs" />
+    <Compile Include="classes\EN\ClienteEN.cs" />
+    <Compile Include="classes\EN\EstabelecimentoEN.cs" />
+    <Compile Include="classes\EN\MovimentoEN.cs" />
+    <Compile Include="classes\EN\ProdutoEN.cs" />
+    <Compile Include="classes\EN\TipoUsuarioEN.cs" />
+    <Compile Include="classes\EN\UsuarioEN.cs" />
+    <Compile Include="classes\MD5.cs" />
+    <Compile Include="paginas\Cad_Cliente.aspx.cs">
+      <DependentUpon>Cad_Cliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Cad_Cliente.aspx.designer.cs">
+      <DependentUpon>Cad_Cliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Principal.aspx.cs">
+      <DependentUpon>Principal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Principal.aspx.designer.cs">
+      <DependentUpon>Principal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Cad_Usuario.aspx.cs">
+      <DependentUpon>Cad_Usuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Cad_Usuario.aspx.designer.cs">
+      <DependentUpon>Cad_Usuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginas\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paginas\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admin.Master" />
+    <Content Include="bootstrap_files\css\theme.css~RFeee3fc.TMP" />
+    <Content Include="bootstrap_files\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="bootstrap_files\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="bootstrap_files\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="bootstrap_files\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -71,10 +137,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Classes\AD\" />
-    <Folder Include="Classes\EN\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
